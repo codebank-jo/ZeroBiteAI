@@ -9,15 +9,16 @@ def navbar():
         """
     )
 
-def sidenav():
+def sidenav(selected="inventory"):
+    inventory_style = "color:#fff;font-weight:bold;" if selected == "inventory" else "color:#bbb;"
+    menu_style = "color:#fff;font-weight:bold;" if selected == "menu" else "color:#bbb;"
     return gr.HTML(
-        """
+        f"""
         <div style='background:#222;color:#fff;padding:24px 0 24px 24px;height:80vh;min-width:150px;'>
             <h3 style='margin-top:0;color:#fff;'>Navigation</h3>
             <ul style='list-style:none;padding-left:0;font-size:1.1em;line-height:2;'>
-                <li style="color:#fff;"><b>📦 Inventory</b></li>
-                <li style="color:#bbb;">📊 Reports</li>
-                <li style="color:#bbb;">⚙️ Settings</li>
+                <li style="{inventory_style}"><a href='/inventory' style='text-decoration:none;{inventory_style}'>📦 Inventory List</a></li>
+                <li style="{menu_style}"><a href='/menu' style='text-decoration:none;{menu_style}'>🍽️ Menu List</a></li>
             </ul>
         </div>
         """
@@ -32,13 +33,13 @@ def footer():
         """
     )
 
-def layout(main_content_fn):
+def layout(main_content_fn, selected="inventory"):
     with gr.Blocks() as page:
         navbar()
         with gr.Row():
             with gr.Column(scale=1, min_width=180):
-                sidenav()
+                sidenav(selected)
             with gr.Column(scale=5):
-                main_content_fn()
+                main_content_fn()  # <-- call the function!
         footer()
     return page

@@ -1,0 +1,84 @@
+{
+  "menu": [
+    {
+      "menuitem": "Classic Omelette",
+      "type": "nonveg",
+      "ingredient": "Eggs, butter, salt, black pepper",
+      "available_stock": 20,
+      "prepareddate": "2025-05-16",
+      "inventories_used": ["Eggs", "Butter", "Salt", "Black Pepper"],
+      "image_url": "https://placehold.co/120x120?text=Omelette",
+      "price_gbp": 4.50
+    },
+    {
+      "menuitem": "Vegetable Pasta",
+      "type": "veg",
+      "ingredient": "Pasta, tomatoes, onions, carrots, olive oil",
+      "available_stock": 15,
+      "prepareddate": "2025-05-16",
+      "inventories_used": ["Pasta", "Tomatoes", "Onions", "Carrots", "Olive Oil"],
+      "image_url": "https://placehold.co/120x120?text=Pasta",
+      "price_gbp": 6.00
+    },
+    {
+      "menuitem": "Grilled Chicken Breast",
+      "type": "nonveg",
+      "ingredient": "Chicken breast, black pepper, salt, olive oil",
+      "available_stock": 10,
+      "prepareddate": "2025-05-16",
+      "inventories_used": ["Chicken Breast", "Black Pepper", "Salt", "Olive Oil"],
+      "image_url": "https://placehold.co/120x120?text=Chicken",
+      "price_gbp": 7.50
+    },
+    {
+      "menuitem": "Vegan Stir Fry",
+      "type": "vegan",
+      "ingredient": "Broccoli, carrots, onions, garlic, olive oil",
+      "available_stock": 12,
+      "prepareddate": "2025-05-16",
+      "inventories_used": ["Carrots", "Onions", "Garlic", "Olive Oil"],
+      "image_url": "https://placehold.co/120x120?text=Stir+Fry",
+      "price_gbp": 5.50
+    },
+    {
+      "menuitem": "Beef Sirloin Steak",
+      "type": "nonveg",
+      "ingredient": "Beef (Sirloin), salt, black pepper",
+      "available_stock": 8,
+      "prepareddate": "2025-05-16",
+      "inventories_used": ["Beef (Sirloin)", "Salt", "Black Pepper"],
+      "image_url": "https://placehold.co/120x120?text=Beef",
+      "price_gbp": 12.00
+    },
+    {
+      "menuitem": "Cheese Sandwich",
+      "type": "veg",
+      "ingredient": "Bread, cheese, butter",
+      "available_stock": 18,
+      "prepareddate": "2025-05-16",
+      "inventories_used": ["Bread", "Cheese", "Butter"],
+      "image_url": "https://placehold.co/120x120?text=Sandwich",
+      "price_gbp": 3.00
+    },
+    {
+      "menuitem": "Fruit Salad",
+      "type": "vegan",
+      "ingredient": "Strawberries, lemons",
+      "available_stock": 10,
+      "prepareddate": "2025-05-16",
+      "inventories_used": ["Strawberries", "Lemons"],
+      "image_url": "https://placehold.co/120x120?text=Fruit+Salad",
+      "price_gbp": 4.00
+    },
+    {
+      "menuitem": "Fish and Chips",
+      "type": "nonveg",
+      "ingredient": "Fish (Cod), potatoes, salt",
+      "available_stock": 9,
+      "prepareddate": "2025-05-16",
+      "inventories_used": ["Fish (Cod)", "Potatoes", "Salt"],
+      "image_url": "https://placehold.co/120x120?text=Fish+Chips",
+      "price_gbp": 8.50
+    }
+  ]
+}
