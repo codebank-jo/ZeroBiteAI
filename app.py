@@ -14,9 +14,15 @@ from leftoverreport import leftover_report_content
 import uvicorn
 # Import FastAPI for creating the backend API
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 
 # Create a FastAPI application instance
 app = FastAPI()
+
+# Add a start page route that redirects to /inventory
+@app.get("/", include_in_schema=False)
+async def startpage():
+    return RedirectResponse(url="/inventory")
 
 # Create the Gradio app for the inventory page
 inventory_app = layout(inventory_list_content, selected="inventory")
@@ -27,7 +33,8 @@ sales_app = layout(sales_trend_content, selected="sales")
 # Create the Gradio app for the leftover report page
 leftover_app = layout(leftover_report_content, selected="leftover")
 
-# Mount the inventory Gradio app at the /inventory path
+# Mount the inventory Gradio app at the root (/) and /inventory path
+#app = gr.mount_gradio_app(app, inventory_app, path="/")
 app = gr.mount_gradio_app(app, inventory_app, path="/inventory")
 # Mount the menu Gradio app at the /menu path
 app = gr.mount_gradio_app(app, menu_app, path="/menu")

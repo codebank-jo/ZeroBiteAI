@@ -37,30 +37,49 @@ def load_sales_trend():
     return df_trend, df_items
 
 def plot_pie(top_items):
-    # Create a pie chart for most purchased items by quantity
-    fig, ax = plt.subplots(figsize=(3, 3))
-    ax.pie(top_items["quantity_sold"], labels=top_items["menuitem"], autopct='%1.1f%%', startangle=140)
-    ax.set_title("Most Purchased Items (by Quantity)")
+    plt.style.use("dark_background")
+    fig, ax = plt.subplots(figsize=(4, 3))
+    wedges, texts, autotexts = ax.pie(
+        top_items["quantity_sold"],
+        labels=top_items["menuitem"],
+        autopct='%1.1f%%',
+        startangle=140,
+        textprops=dict(color="white")
+    )
+    ax.set_title("Most Purchased Items (by Quantity)", color="white")
+    for text in texts:
+        text.set_color("white")
+    for autotext in autotexts:
+        autotext.set_color("white")
+    fig.patch.set_facecolor("#222")
     return fig
 
 def plot_bar(top5):
-    # Create a bar chart for top 5 items by quantity sold
-    fig, ax = plt.subplots(figsize=(3, 3))
+    plt.style.use("dark_background")
+    fig, ax = plt.subplots(figsize=(4, 3))
     ax.bar(top5["menuitem"], top5["quantity_sold"], color="skyblue")
-    ax.set_title("Top 5 Items by Quantity Sold")
-    ax.set_xlabel("Menu Item")
-    ax.set_ylabel("Quantity Sold")
-    plt.xticks(rotation=30, ha="right")  # Rotate x-axis labels for readability
+    ax.set_title("Top 5 Items by Quantity Sold", color="white")
+    ax.set_xlabel("Menu Item", color="white")
+    ax.set_ylabel("Quantity Sold", color="white")
+    ax.tick_params(axis='x', colors='white')
+    ax.tick_params(axis='y', colors='white')
+    plt.xticks(rotation=30, ha="right", color="white")
+    plt.yticks(color="white")
+    fig.patch.set_facecolor("#222")
     return fig
 
 def plot_trending_day(df_trend):
-    # Create a bar chart for daily sales trend
-    fig, ax = plt.subplots(figsize=(3, 3))
+    plt.style.use("dark_background")
+    fig, ax = plt.subplots(figsize=(4, 3))
     ax.bar(df_trend["date"].dt.strftime("%Y-%m-%d"), df_trend["total_sales_gbp"], color="orange")
-    ax.set_title("Trending Sales Day")
-    ax.set_xlabel("Date")
-    ax.set_ylabel("Total Sales (GBP)")
-    plt.xticks(rotation=30, ha="right")  # Rotate x-axis labels for readability
+    ax.set_title("Trending Sales Day", color="white")
+    ax.set_xlabel("Date", color="white")
+    ax.set_ylabel("Total Sales (GBP)", color="white")
+    ax.tick_params(axis='x', colors='white')
+    ax.tick_params(axis='y', colors='white')
+    plt.xticks(rotation=30, ha="right", color="white")
+    plt.yticks(color="white")
+    fig.patch.set_facecolor("#222")
     return fig
 
 def sales_trend_content():
