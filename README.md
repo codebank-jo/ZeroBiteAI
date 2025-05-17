@@ -58,10 +58,11 @@ ZeroBite AI
 - Real-time visualization of inventory, menu, sales, and food waste data.
 - Filtering and pagination for easy navigation.
 - Image preview for menu items.
-- Food waste analytics with interactive graphs.
+- Food waste analytics with interactive graphs (dark theme).
 - User-friendly interface powered by Gradio.
-- Modular layout with navbar, sidebar, and footer.
+- Modular layout with navbar (with logo, profile, logout), sidebar, and footer.
 - Clean navigation URLs (`/inventory`, `/menu`, `/sales`, `/leftover`).
+- Custom favicon using the ZeroBite AI logo.
 
 ## License
 
