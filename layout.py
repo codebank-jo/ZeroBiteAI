@@ -1,11 +1,21 @@
 import gradio as gr  # Import the Gradio library for UI components
 
 def navbar():
-    # Returns a Gradio HTML component for the top navigation bar
+    # Returns a Gradio HTML component for the top navigation bar with logo, anonymous profile, and logout
     return gr.HTML(
         """
-        <div style='width:100%;background:#222;color:#fff;padding:18px 32px;font-size:1.5em;font-weight:bold;letter-spacing:1px;'>
-            ZeroBite AI Inventory Dashboard
+        <div style='width:100%;background:#222;color:#fff;padding:18px 32px;font-size:2em;font-weight:bold;letter-spacing:1px;display:flex;align-items:center;justify-content:space-between;'>
+            <span style="display:flex;align-items:center;gap:16px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="ZeroBite AI Logo" style="width:38px;height:38px;border-radius:50%;background:#fff;padding:2px;">
+                ZeroBite AI
+            </span>
+            <div style='display:flex;align-items:center;gap:18px;'>
+                <span style='display:flex;align-items:center;gap:8px;font-size:1em;'>
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Anonymous Profile" style="background:#444;border-radius:50%;width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;object-fit:cover;">
+                    <span style="font-size:0.9em;color:#ccc;">Administrator</span>
+                </span>
+                <a href="/logout" style='color:#fff;text-decoration:none;font-size:1em;padding:6px 16px;background:#e74c3c;border-radius:5px;font-weight:500;'>Logout</a>
+            </div>
         </div>
         """
     )
@@ -42,8 +52,8 @@ def footer():
     )
 
 def layout(main_content_fn, selected="inventory"):
-    # Defines the overall page layout using Gradio Blocks
-    with gr.Blocks() as page:
+    # Example inside your layout function or main Gradio Blocks
+    with gr.Blocks(title="ZeroBite AI") as demo:
         navbar()  # Add the navbar at the top
         with gr.Row():  # Create a horizontal row for sidebar and main content
             with gr.Column(scale=1, min_width=180):  # Sidebar column
@@ -51,4 +61,4 @@ def layout(main_content_fn, selected="inventory"):
             with gr.Column(scale=5):  # Main content column
                 main_content_fn()  # Call the function to add main content
         footer()  # Add the footer at the bottom
-    return page  # Return the complete page layout
+    return demo  # Return the complete page layout
