@@ -12,6 +12,7 @@ def navbar():
 def sidenav(selected="inventory"):
     inventory_style = "color:#fff;font-weight:bold;" if selected == "inventory" else "color:#bbb;"
     menu_style = "color:#fff;font-weight:bold;" if selected == "menu" else "color:#bbb;"
+    sales_style = "color:#fff;font-weight:bold;" if selected == "sales" else "color:#bbb;"
     return gr.HTML(
         f"""
         <div style='background:#222;color:#fff;padding:24px 0 24px 24px;height:80vh;min-width:150px;'>
@@ -19,6 +20,7 @@ def sidenav(selected="inventory"):
             <ul style='list-style:none;padding-left:0;font-size:1.1em;line-height:2;'>
                 <li style="{inventory_style}"><a href='/inventory' style='text-decoration:none;{inventory_style}'>📦 Inventory List</a></li>
                 <li style="{menu_style}"><a href='/menu' style='text-decoration:none;{menu_style}'>🍽️ Menu List</a></li>
+                <li style="{sales_style}"><a href='/sales' style='text-decoration:none;{sales_style}'>📈 Sales Report</a></li>
             </ul>
         </div>
         """
