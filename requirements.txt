@@ -1,4 +1,6 @@
-Gradio
-Pandas
+gradio
+pandas
 watchdog
 matplotlib
+fastapi
+uvicorn

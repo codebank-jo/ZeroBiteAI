@@ -16,6 +16,8 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse, FileResponse
 import os
+from testdatagen import test_data_gen_content
+from salesdetails import sales_details_content
 
 # Create a FastAPI application instance
 app = FastAPI()
@@ -40,6 +42,10 @@ menu_app = layout(menu_list_content, selected="menu")
 sales_app = layout(sales_trend_content, selected="sales")
 # Create the Gradio app for the leftover report page
 leftover_app = layout(leftover_report_content, selected="leftover")
+# Create the Gradio app for the test data generator page
+testdata_app = layout(test_data_gen_content, selected="testdata")
+# Create the Gradio app for the sales details page
+salesdetails_app = layout(sales_details_content, selected="salesdetails")
 
 # Mount the inventory Gradio app at the root (/) and /inventory path
 #app = gr.mount_gradio_app(app, inventory_app, path="/")
@@ -50,6 +56,10 @@ app = gr.mount_gradio_app(app, menu_app, path="/menu")
 app = gr.mount_gradio_app(app, sales_app, path="/sales")
 # Mount the leftover Gradio app at the /leftover path
 app = gr.mount_gradio_app(app, leftover_app, path="/leftover")
+# Mount the test data generator Gradio app at the /testdata path
+app = gr.mount_gradio_app(app, testdata_app, path="/testdata")
+# Mount the sales details Gradio app at the /salesdetails path
+app = gr.mount_gradio_app(app, salesdetails_app, path="/salesdetails")
 
 # Run the FastAPI app with Uvicorn if this file is executed directly
 if __name__ == "__main__":

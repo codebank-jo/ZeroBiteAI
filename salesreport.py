@@ -37,49 +37,49 @@ def load_sales_trend():
     return df_trend, df_items
 
 def plot_pie(top_items):
-    plt.style.use("dark_background")
-    fig, ax = plt.subplots(figsize=(4, 3))
+    plt.style.use("dark_background")  # Use dark background style for plot
+    fig, ax = plt.subplots(figsize=(4, 2))  # Create a figure and axis
     wedges, texts, autotexts = ax.pie(
-        top_items["quantity_sold"],
-        labels=top_items["menuitem"],
-        autopct='%1.1f%%',
-        startangle=140,
-        textprops=dict(color="white")
+        top_items["quantity_sold"],         # Data for pie slices
+        labels=top_items["menuitem"],       # Labels for each slice
+        autopct='%1.1f%%',                  # Display percentage on slices
+        startangle=140,                     # Start angle for pie chart
+        textprops=dict(color="white")       # Text color for labels
     )
-    ax.set_title("Most Purchased Items (by Quantity)", color="white")
+    ax.set_title("Most Purchased Items (by Quantity)", color="white")  # Set plot title
     for text in texts:
-        text.set_color("white")
+        text.set_color("white")             # Set label color to white
     for autotext in autotexts:
-        autotext.set_color("white")
-    fig.patch.set_facecolor("#222")
+        autotext.set_color("white")         # Set percentage text color to white
+    fig.patch.set_facecolor("#222")         # Set figure background color
     return fig
 
 def plot_bar(top5):
-    plt.style.use("dark_background")
-    fig, ax = plt.subplots(figsize=(4, 3))
-    ax.bar(top5["menuitem"], top5["quantity_sold"], color="skyblue")
-    ax.set_title("Top 5 Items by Quantity Sold", color="white")
-    ax.set_xlabel("Menu Item", color="white")
-    ax.set_ylabel("Quantity Sold", color="white")
-    ax.tick_params(axis='x', colors='white')
-    ax.tick_params(axis='y', colors='white')
-    plt.xticks(rotation=30, ha="right", color="white")
-    plt.yticks(color="white")
-    fig.patch.set_facecolor("#222")
+    plt.style.use("dark_background")        # Use dark background style
+    fig, ax = plt.subplots(figsize=(4, 2))  # Create a figure and axis
+    ax.bar(top5["menuitem"], top5["quantity_sold"], color="skyblue")  # Bar plot
+    ax.set_title("Top 5 Items by Quantity Sold", color="white")        # Set plot title
+    ax.set_xlabel("Menu Item", color="white")                         # X-axis label
+    ax.set_ylabel("Quantity Sold", color="white")                     # Y-axis label
+    ax.tick_params(axis='x', colors='white')                          # X-axis tick color
+    ax.tick_params(axis='y', colors='white')                          # Y-axis tick color
+    plt.xticks(rotation=30, ha="right", color="white")                # Rotate x-ticks
+    plt.yticks(color="white")                                         # Y-tick color
+    fig.patch.set_facecolor("#222")                                   # Set figure background color
     return fig
 
 def plot_trending_day(df_trend):
-    plt.style.use("dark_background")
-    fig, ax = plt.subplots(figsize=(4, 3))
-    ax.bar(df_trend["date"].dt.strftime("%Y-%m-%d"), df_trend["total_sales_gbp"], color="orange")
-    ax.set_title("Trending Sales Day", color="white")
-    ax.set_xlabel("Date", color="white")
-    ax.set_ylabel("Total Sales (GBP)", color="white")
-    ax.tick_params(axis='x', colors='white')
-    ax.tick_params(axis='y', colors='white')
-    plt.xticks(rotation=30, ha="right", color="white")
-    plt.yticks(color="white")
-    fig.patch.set_facecolor("#222")
+    plt.style.use("dark_background")        # Use dark background style
+    fig, ax = plt.subplots(figsize=(4, 2))  # Create a figure and axis
+    ax.bar(df_trend["date"].dt.strftime("%Y-%m-%d"), df_trend["total_sales_gbp"], color="orange")  # Bar plot
+    ax.set_title("Trending Sales Day", color="white")                # Set plot title
+    ax.set_xlabel("Date", color="white")                             # X-axis label
+    ax.set_ylabel("Total Sales (GBP)", color="white")                # Y-axis label
+    ax.tick_params(axis='x', colors='white')                         # X-axis tick color
+    ax.tick_params(axis='y', colors='white')                         # Y-axis tick color
+    plt.xticks(rotation=30, ha="right", color="white")               # Rotate x-ticks
+    plt.yticks(color="white")                                        # Y-tick color
+    fig.patch.set_facecolor("#222")                                  # Set figure background color
     return fig
 
 def sales_trend_content():
@@ -87,18 +87,18 @@ def sales_trend_content():
     df_trend, df_items = load_sales_trend()
     # Create a row for the daily sales trend title
     with gr.Row():
-        gr.Markdown("### Daily Sales Trend (Last 7 Days)")
+        gr.Markdown("### Daily Sales Trend (Last 7 Days)")           # Display section title
     # Display a line plot of total sales per day
     gr.LinePlot(
-        value=df_trend,
-        x="date",
-        y="total_sales_gbp",
-        title="Total Sales (GBP) per Day",
-        x_title="Date",
-        y_title="Total Sales (GBP)",
-        tooltip=["date", "total_sales_gbp"],
-        width=900,
-        height=350,
+        value=df_trend,                                              # Data for line plot
+        x="date",                                                    # X-axis column
+        y="total_sales_gbp",                                         # Y-axis column
+        title="Total Sales (GBP) per Day",                           # Plot title
+        x_title="Date",                                              # X-axis label
+        y_title="Total Sales (GBP)",                                 # Y-axis label
+        tooltip=["date", "total_sales_gbp"],                         # Tooltip columns
+        width=900,                                                   # Plot width
+        height=350,                                                  # Plot height
     )
     # Create a row for the three plots
     with gr.Row():
