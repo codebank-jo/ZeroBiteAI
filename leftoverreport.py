@@ -9,7 +9,7 @@ def load_leftover(filter_text="", date_filter=None, page=1, page_size=10):
     json_path = os.path.join(os.path.dirname(__file__), "data", "leftover.json")
     # Open and load the JSON data
     with open(json_path, "r", encoding="utf-8") as f:
-        waste_data = json.load(f)["food_waste"]
+        waste_data = json.load(f)["leftover"]  # <-- FIXED KEY HERE
     # Convert the data to a pandas DataFrame
     df = pd.DataFrame(waste_data)
     # Filter by menu item or waste reason if filter_text is provided
@@ -30,57 +30,103 @@ def load_leftover(filter_text="", date_filter=None, page=1, page_size=10):
     # Return the page, total count, max page, and the full filtered DataFrame
     return df_page, total, max_page, df
 
+def add_estimated_loss_gbp(df):
+    if df.empty or "menuitem" not in df.columns or "wasted_quantity" not in df.columns:
+        return df
+    # Load menu price map here to avoid NameError
+    menu_path = os.path.join(os.path.dirname(__file__), "data", "menu.json")
+    with open(menu_path, "r", encoding="utf-8") as f:
+        menu_price_map = {item["menuitem"]: float(item["price"]) for item in json.load(f)["menu"]}
+    df = df.copy()
+    df["estimated_loss_gbp"] = df.apply(
+        lambda row: menu_price_map.get(row["menuitem"], 0) * row.get("wasted_quantity", 0), axis=1
+    )
+    return df
+
 def plot_loss_per_item(df):
-    plt.style.use("dark_background")  # Use dark background for the plot
-    fig, ax = plt.subplots(figsize=(8, 3))  # Create a figure and axis
-    # Group by menuitem and sum estimated loss, sort descending
-    per_item = df.groupby("menuitem")["estimated_loss_gbp"].sum().sort_values(ascending=False)
-    # If no data, display a message
-    if per_item.empty:
+    plt.style.use("dark_background")
+    fig, ax = plt.subplots(figsize=(8, 4))
+    # Check for empty DataFrame or missing columns
+    if df.empty or "menuitem" not in df.columns or "sold_quantity" not in df.columns or "wasted_quantity" not in df.columns:
         ax.text(0.5, 0.5, "No data to display", ha="center", va="center", fontsize=12, color="white")
         ax.set_axis_off()
         plt.close(fig)
         return fig
-    # Plot the bar chart
-    per_item.plot(kind="bar", ax=ax, color="#FFA500")  # orange bars
-    ax.set_ylabel("GBP", color="white")  # Set y-axis label
-    ax.set_title("Loss per Item", color="white")  # Set plot title
-    ax.tick_params(axis='x', colors='white')  # Set x-axis tick color
-    ax.tick_params(axis='y', colors='white')  # Set y-axis tick color
-    plt.xticks(rotation=30, ha="right", fontsize=10, color="white")  # Rotate x-ticks
-    plt.yticks(color="white")  # Set y-tick color
-    # Annotate each bar with its value
-    for i, v in enumerate(per_item):
-        ax.text(i, v + 0.5, f"£{v:.2f}", ha="center", fontsize=9, color="white")
-    plt.tight_layout()  # Adjust layout
-    plt.close(fig)  # Close the figure to prevent duplicate display
-    return fig  # Return the figure
+    grouped = df.groupby("menuitem")[["sold_quantity", "wasted_quantity"]].sum()
+    if grouped.empty:
+        ax.text(0.5, 0.5, "No data to display", ha="center", va="center", fontsize=12, color="white")
+        ax.set_axis_off()
+        plt.close(fig)
+        return fig
+    grouped.plot(kind="bar", ax=ax, color=["#00FF88", "#FFA500"])
+    ax.set_ylabel("Quantity", color="white")
+    ax.set_title("Sold vs Wasted Quantity per Menu Item", color="white")
+    ax.tick_params(axis='x', colors='white')
+    ax.tick_params(axis='y', colors='white')
+    plt.xticks(rotation=30, ha="right", fontsize=10, color="white")
+    plt.yticks(color="white")
+    plt.tight_layout()
+    plt.close(fig)
+    return fig
 
 def plot_loss_by_date(df):
-    plt.style.use("dark_background")  # Use dark background for the plot
-    fig, ax = plt.subplots(figsize=(8, 3))  # Create a figure and axis
-    # Group by date and sum estimated loss, sort by date
-    per_date = df.groupby("date")["estimated_loss_gbp"].sum().sort_index()
-    # If no data, display a message
-    if per_date.empty:
+    import matplotlib.pyplot as plt
+    import os
+    import json
+
+    # Load menu prices
+    menu_path = os.path.join(os.path.dirname(__file__), "data", "menu.json")
+    with open(menu_path, "r", encoding="utf-8") as f:
+        menu_price_map = {item["menuitem"]: float(item["price"]) for item in json.load(f)["menu"]}
+
+    # If df is empty, reload from leftover.json to ensure we have all data
+    if df.empty or "menuitem" not in df.columns or "date" not in df.columns or "wasted_quantity" not in df.columns:
+        leftover_path = os.path.join(os.path.dirname(__file__), "data", "leftover.json")
+        with open(leftover_path, "r", encoding="utf-8") as f:
+            waste_data = json.load(f)["leftover"]
+        df = pd.DataFrame(waste_data)
+        if df.empty or "menuitem" not in df.columns or "date" not in df.columns or "wasted_quantity" not in df.columns:
+            # Still empty, show no data
+            plt.style.use("dark_background")
+            fig, ax = plt.subplots(figsize=(8, 3))
+            ax.text(0.5, 0.5, "No data to display", ha="center", va="center", fontsize=12, color="white")
+            ax.set_axis_off()
+            plt.close(fig)
+            return fig
+
+    # Calculate estimated loss per row
+    df = df.copy()
+    df["estimated_loss_gbp"] = df.apply(
+        lambda row: menu_price_map.get(row["menuitem"], 0) * row.get("wasted_quantity", 0), axis=1
+    )
+
+    # Group by date and menuitem
+    grouped = df.groupby(["date", "menuitem"])["estimated_loss_gbp"].sum().reset_index()
+
+    if grouped.empty:
+        plt.style.use("dark_background")
+        fig, ax = plt.subplots(figsize=(8, 3))
         ax.text(0.5, 0.5, "No data to display", ha="center", va="center", fontsize=12, color="white")
         ax.set_axis_off()
         plt.close(fig)
         return fig
-    # Plot the line chart
-    per_date.plot(kind="line", ax=ax, color="#00FF88", marker="o")
-    ax.set_ylabel("GBP", color="white")  # Set y-axis label
-    ax.set_title("Loss by Date", color="white")  # Set plot title
-    ax.tick_params(axis='x', colors='white')  # Set x-axis tick color
-    ax.tick_params(axis='y', colors='white')  # Set y-axis tick color
-    plt.xticks(rotation=30, ha="right", fontsize=10, color="white")  # Rotate x-ticks
-    plt.yticks(color="white")  # Set y-tick color
-    # Annotate each point with its value
-    for i, (date, v) in enumerate(per_date.items()):
-        ax.text(i, v, f"£{v:.2f}", ha="center", va="bottom", fontsize=9, color="white")
-    plt.tight_layout()  # Adjust layout
-    plt.close(fig)  # Close the figure to prevent duplicate display
-    return fig  # Return the figure
+
+    # Pivot for plotting: dates as x, menuitems as lines/bars
+    pivot = grouped.pivot(index="date", columns="menuitem", values="estimated_loss_gbp").fillna(0)
+
+    plt.style.use("dark_background")
+    fig, ax = plt.subplots(figsize=(10, 5))
+    pivot.plot(ax=ax, kind="bar", stacked=True, colormap="tab20")
+
+    ax.set_ylabel("Estimated Loss (GBP)", color="white")
+    ax.set_title("Estimated Loss by Item and Date", color="white")
+    ax.tick_params(axis='x', colors='white', rotation=30)
+    ax.tick_params(axis='y', colors='white')
+    plt.xticks(fontsize=10, color="white")
+    plt.yticks(color="white")
+    plt.tight_layout()
+    plt.close(fig)
+    return fig
 
 def leftover_report_content():
     # Create a Gradio Blocks interface with custom CSS
@@ -92,7 +138,7 @@ def leftover_report_content():
             filter_box = gr.Textbox(label="Filter by Menu Item or Reason", placeholder="Type to filter...", scale=3)
             # Dropdown for filtering by date
             date_filter = gr.Dropdown(
-                choices=[""] + sorted(list({row["date"] for row in json.load(open(os.path.join(os.path.dirname(__file__), "data", "leftover.json"), encoding="utf-8"))["food_waste"]})),
+                choices=[""] + sorted(list({row["date"] for row in json.load(open(os.path.join(os.path.dirname(__file__), "data", "leftover.json"), encoding="utf-8"))["leftover"]})),
                 label="Filter by Date",
                 value="",
                 scale=1

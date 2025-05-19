@@ -14,7 +14,7 @@ from leftoverreport import leftover_report_content
 import uvicorn
 # Import FastAPI for creating the backend API
 from fastapi import FastAPI
-from fastapi.responses import RedirectResponse, FileResponse
+from fastapi.responses import RedirectResponse, FileResponse, Response
 import os
 from testdatagen import test_data_gen_content
 from salesdetails import sales_details_content
@@ -25,9 +25,10 @@ app = FastAPI()
 # Serve the favicon.ico using the same app logo
 @app.get("/favicon.ico", include_in_schema=False)
 async def favicon():
-    # Download the logo and save as favicon.ico in your project root or data folder if not already present
-    # Here, we assume you have saved the logo as 'favicon.ico' in the project root
-    return FileResponse(os.path.join(os.path.dirname(__file__), "favicon.ico"))
+    path = os.path.join(os.path.dirname(__file__), "favicon.ico")
+    if os.path.exists(path):
+        return FileResponse(path)
+    return Response(status_code=204)  # No Content if favicon is missing
 
 # Add a start page route that redirects to /inventory
 @app.get("/", include_in_schema=False)

@@ -1,67 +1,32 @@
 {
-  "food_waste": [
-    {
-      "date": "2025-05-16",
-      "menuitem": "Vegetable Pasta",
-      "prepared_quantity": 15,
-      "sold_quantity": 8,
-      "wasted_quantity": 7,
-      "waste_reason": "Unsold at end of day",
-      "estimated_loss_gbp": 42.00
-    },
-    {
-      "date": "2025-05-16",
-      "menuitem": "Fruit Salad",
-      "prepared_quantity": 10,
-      "sold_quantity": 6,
-      "wasted_quantity": 4,
-      "waste_reason": "Expired ingredients",
-      "estimated_loss_gbp": 16.00
-    },
-    {
-      "date": "2025-05-15",
-      "menuitem": "Cheese Sandwich",
-      "prepared_quantity": 12,
-      "sold_quantity": 8,
-      "wasted_quantity": 4,
-      "waste_reason": "Unsold at end of day",
-      "estimated_loss_gbp": 12.00
-    },
+  "leftover": [
     {
       "date": "2025-05-14",
-      "menuitem": "Grilled Chicken Breast",
-      "prepared_quantity": 8,
-      "sold_quantity": 5,
-      "wasted_quantity": 3,
-      "waste_reason": "Overproduction",
-      "estimated_loss_gbp": 22.50
-    },
-    {
-      "date": "2025-05-13",
       "menuitem": "Classic Omelette",
-      "prepared_quantity": 10,
-      "sold_quantity": 9,
-      "wasted_quantity": 1,
-      "waste_reason": "Unsold at end of day",
-      "estimated_loss_gbp": 4.50
+      "sold_quantity": 81,
+      "wasted_quantity": 5,
+      "reason": "Spoilage"
     },
     {
-      "date": "2025-05-12",
-      "menuitem": "Beef Sirloin Steak",
-      "prepared_quantity": 3,
-      "sold_quantity": 2,
-      "wasted_quantity": 1,
-      "waste_reason": "Overproduction",
-      "estimated_loss_gbp": 12.00
-    },
-    {
-      "date": "2025-05-11",
+      "date": "2025-05-17",
       "menuitem": "Vegan Stir Fry",
-      "prepared_quantity": 4,
-      "sold_quantity": 2,
+      "sold_quantity": 54,
+      "wasted_quantity": 1,
+      "reason": "Spoilage"
+    },
+    {
+      "date": "2025-05-18",
+      "menuitem": "Beef Sirloin Steak",
+      "sold_quantity": 63,
       "wasted_quantity": 2,
-      "waste_reason": "Expired ingredients",
-      "estimated_loss_gbp": 11.00
+      "reason": "Overproduction"
+    },
+    {
+      "date": "2025-05-19",
+      "menuitem": "Cheese Sandwich",
+      "sold_quantity": 48,
+      "wasted_quantity": 6,
+      "reason": "Customer Return"
     }
   ]
 }

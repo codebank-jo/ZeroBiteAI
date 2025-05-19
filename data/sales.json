@@ -1,284 +1,156 @@
 {
   "daily_sales": [
     {
-      "date": "2025-05-12",
-      "total_sales_gbp": 240.0,
+      "date": "2025-05-06",
+      "total_sales_gbp": 249.48,
       "items_sold": [
         {
           "menuitem": "Classic Omelette",
-          "quantity_sold": 15,
-          "total_sales_gbp": 75.0
-        },
+          "quantity_sold": 27,
+          "total_sales_gbp": 249.48
+        }
+      ]
+    },
+    {
+      "date": "2025-05-07",
+      "total_sales_gbp": 792.68,
+      "items_sold": [
         {
           "menuitem": "Vegetable Pasta",
-          "quantity_sold": 3,
-          "total_sales_gbp": 15.0
-        },
+          "quantity_sold": 38,
+          "total_sales_gbp": 792.68
+        }
+      ]
+    },
+    {
+      "date": "2025-05-08",
+      "total_sales_gbp": 469.56,
+      "items_sold": [
+        {
+          "menuitem": "Grilled Chicken Breast",
+          "quantity_sold": 84,
+          "total_sales_gbp": 469.56
+        }
+      ]
+    },
+    {
+      "date": "2025-05-09",
+      "total_sales_gbp": 1574.16,
+      "items_sold": [
+        {
+          "menuitem": "Vegan Stir Fry",
+          "quantity_sold": 84,
+          "total_sales_gbp": 1574.16
+        }
+      ]
+    },
+    {
+      "date": "2025-05-10",
+      "total_sales_gbp": 668.61,
+      "items_sold": [
         {
           "menuitem": "Beef Sirloin Steak",
-          "quantity_sold": 1,
-          "total_sales_gbp": 5.0
-        },
+          "quantity_sold": 23,
+          "total_sales_gbp": 668.61
+        }
+      ]
+    },
+    {
+      "date": "2025-05-11",
+      "total_sales_gbp": 2110.48,
+      "items_sold": [
         {
           "menuitem": "Cheese Sandwich",
-          "quantity_sold": 15,
-          "total_sales_gbp": 75.0
-        },
+          "quantity_sold": 124,
+          "total_sales_gbp": 2110.48
+        }
+      ]
+    },
+    {
+      "date": "2025-05-12",
+      "total_sales_gbp": 1909.76,
+      "items_sold": [
         {
           "menuitem": "Fruit Salad",
-          "quantity_sold": 8,
-          "total_sales_gbp": 40.0
-        },
-        {
-          "menuitem": "Fish and Chips",
-          "quantity_sold": 6,
-          "total_sales_gbp": 30.0
+          "quantity_sold": 64,
+          "total_sales_gbp": 1909.76
         }
       ]
     },
     {
       "date": "2025-05-13",
-      "total_sales_gbp": 185.0,
+      "total_sales_gbp": 72.6,
       "items_sold": [
         {
-          "menuitem": "Classic Omelette",
-          "quantity_sold": 5,
-          "total_sales_gbp": 25.0
-        },
-        {
-          "menuitem": "Vegetable Pasta",
-          "quantity_sold": 1,
-          "total_sales_gbp": 5.0
-        },
-        {
-          "menuitem": "Grilled Chicken Breast",
-          "quantity_sold": 10,
-          "total_sales_gbp": 50.0
-        },
-        {
-          "menuitem": "Vegan Stir Fry",
-          "quantity_sold": 10,
-          "total_sales_gbp": 50.0
-        },
-        {
-          "menuitem": "Beef Sirloin Steak",
-          "quantity_sold": 3,
-          "total_sales_gbp": 15.0
-        },
-        {
-          "menuitem": "Fruit Salad",
-          "quantity_sold": 8,
-          "total_sales_gbp": 40.0
+          "menuitem": "Fish and Chips",
+          "quantity_sold": 12,
+          "total_sales_gbp": 72.6
         }
       ]
     },
     {
       "date": "2025-05-14",
-      "total_sales_gbp": 300.0,
+      "total_sales_gbp": 497.34,
       "items_sold": [
         {
           "menuitem": "Classic Omelette",
-          "quantity_sold": 19,
-          "total_sales_gbp": 95.0
-        },
-        {
-          "menuitem": "Vegetable Pasta",
-          "quantity_sold": 12,
-          "total_sales_gbp": 60.0
-        },
-        {
-          "menuitem": "Grilled Chicken Breast",
-          "quantity_sold": 7,
-          "total_sales_gbp": 35.0
-        },
-        {
-          "menuitem": "Vegan Stir Fry",
-          "quantity_sold": 8,
-          "total_sales_gbp": 40.0
-        },
-        {
-          "menuitem": "Cheese Sandwich",
-          "quantity_sold": 9,
-          "total_sales_gbp": 45.0
-        },
-        {
-          "menuitem": "Fruit Salad",
-          "quantity_sold": 5,
-          "total_sales_gbp": 25.0
+          "quantity_sold": 81,
+          "total_sales_gbp": 497.34
         }
       ]
     },
     {
       "date": "2025-05-15",
-      "total_sales_gbp": 245.0,
+      "total_sales_gbp": 1875.0,
       "items_sold": [
         {
-          "menuitem": "Classic Omelette",
-          "quantity_sold": 5,
-          "total_sales_gbp": 25.0
-        },
-        {
           "menuitem": "Vegetable Pasta",
-          "quantity_sold": 14,
-          "total_sales_gbp": 70.0
-        },
-        {
-          "menuitem": "Grilled Chicken Breast",
-          "quantity_sold": 7,
-          "total_sales_gbp": 35.0
-        },
-        {
-          "menuitem": "Vegan Stir Fry",
-          "quantity_sold": 6,
-          "total_sales_gbp": 30.0
-        },
-        {
-          "menuitem": "Beef Sirloin Steak",
-          "quantity_sold": 2,
-          "total_sales_gbp": 10.0
-        },
-        {
-          "menuitem": "Cheese Sandwich",
-          "quantity_sold": 7,
-          "total_sales_gbp": 35.0
-        },
-        {
-          "menuitem": "Fruit Salad",
-          "quantity_sold": 5,
-          "total_sales_gbp": 25.0
-        },
-        {
-          "menuitem": "Fish and Chips",
-          "quantity_sold": 3,
-          "total_sales_gbp": 15.0
+          "quantity_sold": 100,
+          "total_sales_gbp": 1875.0
         }
       ]
     },
     {
       "date": "2025-05-16",
-      "total_sales_gbp": 270.0,
+      "total_sales_gbp": 157.43,
       "items_sold": [
         {
-          "menuitem": "Classic Omelette",
-          "quantity_sold": 5,
-          "total_sales_gbp": 25.0
-        },
-        {
-          "menuitem": "Vegetable Pasta",
-          "quantity_sold": 6,
-          "total_sales_gbp": 30.0
-        },
-        {
           "menuitem": "Grilled Chicken Breast",
-          "quantity_sold": 1,
-          "total_sales_gbp": 5.0
-        },
-        {
-          "menuitem": "Vegan Stir Fry",
-          "quantity_sold": 9,
-          "total_sales_gbp": 45.0
-        },
-        {
-          "menuitem": "Beef Sirloin Steak",
           "quantity_sold": 7,
-          "total_sales_gbp": 35.0
-        },
-        {
-          "menuitem": "Cheese Sandwich",
-          "quantity_sold": 14,
-          "total_sales_gbp": 70.0
-        },
-        {
-          "menuitem": "Fruit Salad",
-          "quantity_sold": 5,
-          "total_sales_gbp": 25.0
-        },
-        {
-          "menuitem": "Fish and Chips",
-          "quantity_sold": 7,
-          "total_sales_gbp": 35.0
+          "total_sales_gbp": 157.43
         }
       ]
     },
     {
       "date": "2025-05-17",
-      "total_sales_gbp": 190.0,
+      "total_sales_gbp": 436.86,
       "items_sold": [
         {
-          "menuitem": "Classic Omelette",
-          "quantity_sold": 1,
-          "total_sales_gbp": 5.0
-        },
-        {
-          "menuitem": "Vegetable Pasta",
-          "quantity_sold": 12,
-          "total_sales_gbp": 60.0
-        },
-        {
-          "menuitem": "Grilled Chicken Breast",
-          "quantity_sold": 5,
-          "total_sales_gbp": 25.0
-        },
-        {
-          "menuitem": "Beef Sirloin Steak",
-          "quantity_sold": 3,
-          "total_sales_gbp": 15.0
-        },
-        {
-          "menuitem": "Cheese Sandwich",
-          "quantity_sold": 3,
-          "total_sales_gbp": 15.0
-        },
-        {
-          "menuitem": "Fruit Salad",
-          "quantity_sold": 5,
-          "total_sales_gbp": 25.0
-        },
-        {
-          "menuitem": "Fish and Chips",
-          "quantity_sold": 9,
-          "total_sales_gbp": 45.0
+          "menuitem": "Vegan Stir Fry",
+          "quantity_sold": 54,
+          "total_sales_gbp": 436.86
         }
       ]
     },
     {
       "date": "2025-05-18",
-      "total_sales_gbp": 185.0,
+      "total_sales_gbp": 645.12,
       "items_sold": [
         {
-          "menuitem": "Classic Omelette",
-          "quantity_sold": 7,
-          "total_sales_gbp": 35.0
-        },
-        {
-          "menuitem": "Vegetable Pasta",
-          "quantity_sold": 5,
-          "total_sales_gbp": 25.0
-        },
-        {
-          "menuitem": "Grilled Chicken Breast",
-          "quantity_sold": 4,
-          "total_sales_gbp": 20.0
-        },
-        {
-          "menuitem": "Vegan Stir Fry",
-          "quantity_sold": 2,
-          "total_sales_gbp": 10.0
-        },
-        {
           "menuitem": "Beef Sirloin Steak",
-          "quantity_sold": 7,
-          "total_sales_gbp": 35.0
-        },
+          "quantity_sold": 63,
+          "total_sales_gbp": 645.12
+        }
+      ]
+    },
+    {
+      "date": "2025-05-19",
+      "total_sales_gbp": 412.8,
+      "items_sold": [
         {
-          "menuitem": "Fruit Salad",
-          "quantity_sold": 7,
-          "total_sales_gbp": 35.0
-        },
-        {
-          "menuitem": "Fish and Chips",
-          "quantity_sold": 5,
-          "total_sales_gbp": 25.0
+          "menuitem": "Cheese Sandwich",
+          "quantity_sold": 48,
+          "total_sales_gbp": 412.8
         }
       ]
     }

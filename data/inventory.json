@@ -3,272 +3,272 @@
     {
       "material": "Flour",
       "type": "Dry Goods",
-      "quantity": "50 kg",
-      "purchase_date": "2025-05-12",
-      "remaining_stock": "20 kg",
-      "next_purchase_tentative_date": "2025-05-20",
-      "expiry_date": "2025-08-12"
+      "quantity": "100 kg",
+      "purchase_date": "2025-05-07",
+      "remaining_stock": "93 kg",
+      "next_purchase_tentative_date": "2025-06-06",
+      "expiry_date": "2025-08-01"
     },
     {
       "material": "Eggs",
       "type": "Dairy",
-      "quantity": "200 pcs",
-      "purchase_date": "2025-05-14",
-      "remaining_stock": "80 pcs",
-      "next_purchase_tentative_date": "2025-05-18",
-      "expiry_date": "2025-05-28"
+      "quantity": "142 pcs",
+      "purchase_date": "2025-05-08",
+      "remaining_stock": "120 pcs",
+      "next_purchase_tentative_date": "2025-06-07",
+      "expiry_date": "2025-06-08"
     },
     {
       "material": "Butter",
       "type": "Dairy",
-      "quantity": "30 kg",
-      "purchase_date": "2025-05-10",
-      "remaining_stock": "10 kg",
-      "next_purchase_tentative_date": "2025-05-16",
-      "expiry_date": "2025-06-10"
+      "quantity": "189 kg",
+      "purchase_date": "2025-05-08",
+      "remaining_stock": "95 kg",
+      "next_purchase_tentative_date": "2025-06-07",
+      "expiry_date": "2025-08-29"
     },
     {
       "material": "Beef (Sirloin)",
       "type": "Meat",
-      "quantity": "40 kg",
-      "purchase_date": "2025-05-15",
-      "remaining_stock": "15 kg",
-      "next_purchase_tentative_date": "2025-05-20",
-      "expiry_date": "2025-05-25"
+      "quantity": "133 kg",
+      "purchase_date": "2025-05-06",
+      "remaining_stock": "127 kg",
+      "next_purchase_tentative_date": "2025-06-05",
+      "expiry_date": "2025-07-29"
     },
     {
       "material": "Potatoes",
       "type": "Vegetables",
-      "quantity": "100 kg",
-      "purchase_date": "2025-05-13",
-      "remaining_stock": "40 kg",
-      "next_purchase_tentative_date": "2025-05-19",
-      "expiry_date": "2025-06-13"
+      "quantity": "164 kg",
+      "purchase_date": "2025-05-08",
+      "remaining_stock": "54 kg",
+      "next_purchase_tentative_date": "2025-06-07",
+      "expiry_date": "2025-09-02"
     },
     {
       "material": "Milk",
       "type": "Dairy",
-      "quantity": "80 L",
-      "purchase_date": "2025-05-15",
-      "remaining_stock": "30 L",
-      "next_purchase_tentative_date": "2025-05-19",
-      "expiry_date": "2025-05-22"
+      "quantity": "182 L",
+      "purchase_date": "2025-05-05",
+      "remaining_stock": "103 L",
+      "next_purchase_tentative_date": "2025-06-04",
+      "expiry_date": "2025-07-07"
     },
     {
       "material": "Bread",
       "type": "Bakery",
-      "quantity": "50 loaves",
-      "purchase_date": "2025-05-14",
-      "remaining_stock": "15 loaves",
-      "next_purchase_tentative_date": "2025-05-17",
-      "expiry_date": "2025-05-20"
+      "quantity": "125 loaves",
+      "purchase_date": "2025-05-08",
+      "remaining_stock": "8 loaves",
+      "next_purchase_tentative_date": "2025-06-07",
+      "expiry_date": "2025-06-23"
     },
     {
       "material": "Cheese",
       "type": "Dairy",
-      "quantity": "20 kg",
-      "purchase_date": "2025-05-13",
-      "remaining_stock": "8 kg",
-      "next_purchase_tentative_date": "2025-05-18",
-      "expiry_date": "2025-06-10"
+      "quantity": "157 kg",
+      "purchase_date": "2025-05-07",
+      "remaining_stock": "109 kg",
+      "next_purchase_tentative_date": "2025-06-06",
+      "expiry_date": "2025-07-26"
     },
     {
       "material": "Fish (Cod)",
       "type": "Seafood",
-      "quantity": "30 kg",
-      "purchase_date": "2025-05-15",
-      "remaining_stock": "12 kg",
-      "next_purchase_tentative_date": "2025-05-20",
-      "expiry_date": "2025-05-23"
+      "quantity": "147 kg",
+      "purchase_date": "2025-05-05",
+      "remaining_stock": "125 kg",
+      "next_purchase_tentative_date": "2025-06-04",
+      "expiry_date": "2025-08-21"
     },
     {
       "material": "Vegetables",
       "type": "Fresh Produce",
-      "quantity": "60 kg",
-      "purchase_date": "2025-05-14",
-      "remaining_stock": "25 kg",
-      "next_purchase_tentative_date": "2025-05-18",
-      "expiry_date": "2025-05-21"
+      "quantity": "157 kg",
+      "purchase_date": "2025-05-06",
+      "remaining_stock": "70 kg",
+      "next_purchase_tentative_date": "2025-06-05",
+      "expiry_date": "2025-08-30"
     },
     {
       "material": "Chicken Breast",
       "type": "Meat",
-      "quantity": "35 kg",
-      "purchase_date": "2025-05-15",
-      "remaining_stock": "12 kg",
-      "next_purchase_tentative_date": "2025-05-21",
-      "expiry_date": "2025-05-25"
+      "quantity": "153 kg",
+      "purchase_date": "2025-05-05",
+      "remaining_stock": "121 kg",
+      "next_purchase_tentative_date": "2025-06-04",
+      "expiry_date": "2025-07-17"
     },
     {
       "material": "Carrots",
       "type": "Vegetables",
-      "quantity": "50 kg",
-      "purchase_date": "2025-05-14",
-      "remaining_stock": "20 kg",
-      "next_purchase_tentative_date": "2025-05-19",
-      "expiry_date": "2025-05-22"
+      "quantity": "142 kg",
+      "purchase_date": "2025-05-07",
+      "remaining_stock": "104 kg",
+      "next_purchase_tentative_date": "2025-06-06",
+      "expiry_date": "2025-07-17"
     },
     {
       "material": "Pasta",
       "type": "Dry Goods",
-      "quantity": "40 kg",
-      "purchase_date": "2025-05-12",
-      "remaining_stock": "18 kg",
-      "next_purchase_tentative_date": "2025-05-20",
-      "expiry_date": "2025-09-12"
+      "quantity": "175 kg",
+      "purchase_date": "2025-05-08",
+      "remaining_stock": "9 kg",
+      "next_purchase_tentative_date": "2025-06-07",
+      "expiry_date": "2025-08-23"
     },
     {
       "material": "Onions",
       "type": "Vegetables",
-      "quantity": "30 kg",
-      "purchase_date": "2025-05-13",
-      "remaining_stock": "10 kg",
-      "next_purchase_tentative_date": "2025-05-18",
-      "expiry_date": "2025-05-25"
+      "quantity": "120 kg",
+      "purchase_date": "2025-05-08",
+      "remaining_stock": "4 kg",
+      "next_purchase_tentative_date": "2025-06-07",
+      "expiry_date": "2025-06-26"
     },
     {
       "material": "Salt",
       "type": "Seasoning",
-      "quantity": "25 kg",
-      "purchase_date": "2025-05-10",
-      "remaining_stock": "15 kg",
-      "next_purchase_tentative_date": "2025-06-01",
-      "expiry_date": "2026-05-10"
+      "quantity": "123 kg",
+      "purchase_date": "2025-05-08",
+      "remaining_stock": "38 kg",
+      "next_purchase_tentative_date": "2025-06-07",
+      "expiry_date": "2025-06-10"
     },
     {
       "material": "Black Pepper",
       "type": "Seasoning",
-      "quantity": "10 kg",
-      "purchase_date": "2025-05-10",
-      "remaining_stock": "5 kg",
-      "next_purchase_tentative_date": "2025-06-01",
-      "expiry_date": "2026-05-10"
+      "quantity": "161 kg",
+      "purchase_date": "2025-05-06",
+      "remaining_stock": "83 kg",
+      "next_purchase_tentative_date": "2025-06-05",
+      "expiry_date": "2025-08-21"
     },
     {
       "material": "Lettuce",
       "type": "Vegetables",
-      "quantity": "25 kg",
-      "purchase_date": "2025-05-14",
-      "remaining_stock": "8 kg",
-      "next_purchase_tentative_date": "2025-05-18",
-      "expiry_date": "2025-05-20"
+      "quantity": "129 kg",
+      "purchase_date": "2025-05-05",
+      "remaining_stock": "102 kg",
+      "next_purchase_tentative_date": "2025-06-04",
+      "expiry_date": "2025-07-09"
     },
     {
       "material": "Tomatoes",
       "type": "Vegetables",
-      "quantity": "35 kg",
-      "purchase_date": "2025-05-15",
-      "remaining_stock": "15 kg",
-      "next_purchase_tentative_date": "2025-05-20",
-      "expiry_date": "2025-05-25"
+      "quantity": "107 kg",
+      "purchase_date": "2025-05-08",
+      "remaining_stock": "96 kg",
+      "next_purchase_tentative_date": "2025-06-07",
+      "expiry_date": "2025-08-25"
     },
     {
       "material": "Olive Oil",
       "type": "Condiments",
-      "quantity": "20 L",
-      "purchase_date": "2025-05-10",
-      "remaining_stock": "8 L",
-      "next_purchase_tentative_date": "2025-06-01",
-      "expiry_date": "2026-05-10"
+      "quantity": "118 L",
+      "purchase_date": "2025-05-08",
+      "remaining_stock": "88 L",
+      "next_purchase_tentative_date": "2025-06-07",
+      "expiry_date": "2025-08-25"
     },
     {
       "material": "Sugar",
       "type": "Dry Goods",
-      "quantity": "30 kg",
-      "purchase_date": "2025-05-12",
-      "remaining_stock": "12 kg",
-      "next_purchase_tentative_date": "2025-05-20",
-      "expiry_date": "2026-05-12"
+      "quantity": "117 kg",
+      "purchase_date": "2025-05-06",
+      "remaining_stock": "111 kg",
+      "next_purchase_tentative_date": "2025-06-05",
+      "expiry_date": "2025-08-24"
     },
     {
       "material": "Bacon",
       "type": "Meat",
-      "quantity": "25 kg",
-      "purchase_date": "2025-05-15",
-      "remaining_stock": "10 kg",
-      "next_purchase_tentative_date": "2025-05-21",
-      "expiry_date": "2025-05-28"
+      "quantity": "186 kg",
+      "purchase_date": "2025-05-06",
+      "remaining_stock": "14 kg",
+      "next_purchase_tentative_date": "2025-06-05",
+      "expiry_date": "2025-08-05"
     },
     {
       "material": "Mushrooms",
       "type": "Vegetables",
-      "quantity": "20 kg",
-      "purchase_date": "2025-05-13",
-      "remaining_stock": "8 kg",
-      "next_purchase_tentative_date": "2025-05-18",
-      "expiry_date": "2025-05-22"
+      "quantity": "187 kg",
+      "purchase_date": "2025-05-08",
+      "remaining_stock": "171 kg",
+      "next_purchase_tentative_date": "2025-06-07",
+      "expiry_date": "2025-08-14"
     },
     {
       "material": "Coffee Beans",
       "type": "Beverages",
-      "quantity": "15 kg",
-      "purchase_date": "2025-05-12",
-      "remaining_stock": "6 kg",
-      "next_purchase_tentative_date": "2025-05-20",
-      "expiry_date": "2026-05-12"
+      "quantity": "152 kg",
+      "purchase_date": "2025-05-06",
+      "remaining_stock": "80 kg",
+      "next_purchase_tentative_date": "2025-06-05",
+      "expiry_date": "2025-06-24"
     },
     {
       "material": "Tea Leaves",
       "type": "Beverages",
-      "quantity": "10 kg",
-      "purchase_date": "2025-05-10",
-      "remaining_stock": "4 kg",
-      "next_purchase_tentative_date": "2025-05-20",
-      "expiry_date": "2026-05-10"
+      "quantity": "162 kg",
+      "purchase_date": "2025-05-09",
+      "remaining_stock": "142 kg",
+      "next_purchase_tentative_date": "2025-06-08",
+      "expiry_date": "2025-07-18"
     },
     {
       "material": "Strawberries",
       "type": "Fruits",
-      "quantity": "12 kg",
-      "purchase_date": "2025-05-14",
-      "remaining_stock": "5 kg",
-      "next_purchase_tentative_date": "2025-05-18",
-      "expiry_date": "2025-05-20"
+      "quantity": "172 kg",
+      "purchase_date": "2025-05-06",
+      "remaining_stock": "1 kg",
+      "next_purchase_tentative_date": "2025-06-05",
+      "expiry_date": "2025-07-15"
     },
     {
       "material": "Lemons",
       "type": "Fruits",
-      "quantity": "10 kg",
-      "purchase_date": "2025-05-15",
-      "remaining_stock": "4 kg",
-      "next_purchase_tentative_date": "2025-05-20",
-      "expiry_date": "2025-05-25"
+      "quantity": "152 kg",
+      "purchase_date": "2025-05-05",
+      "remaining_stock": "62 kg",
+      "next_purchase_tentative_date": "2025-06-04",
+      "expiry_date": "2025-07-14"
     },
     {
       "material": "Ketchup",
       "type": "Condiments",
-      "quantity": "20 L",
-      "purchase_date": "2025-05-12",
-      "remaining_stock": "8 L",
-      "next_purchase_tentative_date": "2025-06-01",
-      "expiry_date": "2026-05-12"
+      "quantity": "194 L",
+      "purchase_date": "2025-05-05",
+      "remaining_stock": "148 L",
+      "next_purchase_tentative_date": "2025-06-04",
+      "expiry_date": "2025-06-19"
     },
     {
       "material": "Mayonnaise",
       "type": "Condiments",
-      "quantity": "15 L",
-      "purchase_date": "2025-05-10",
-      "remaining_stock": "5 L",
-      "next_purchase_tentative_date": "2025-06-01",
-      "expiry_date": "2025-09-10"
+      "quantity": "123 L",
+      "purchase_date": "2025-05-07",
+      "remaining_stock": "60 L",
+      "next_purchase_tentative_date": "2025-06-06",
+      "expiry_date": "2025-06-27"
     },
     {
       "material": "Honey",
       "type": "Condiments",
-      "quantity": "12 kg",
-      "purchase_date": "2025-05-12",
-      "remaining_stock": "5 kg",
-      "next_purchase_tentative_date": "2025-06-01",
-      "expiry_date": "2026-05-12"
+      "quantity": "156 kg",
+      "purchase_date": "2025-05-05",
+      "remaining_stock": "107 kg",
+      "next_purchase_tentative_date": "2025-06-04",
+      "expiry_date": "2025-07-20"
     },
     {
       "material": "Garlic",
       "type": "Vegetables",
-      "quantity": "10 kg",
-      "purchase_date": "2025-05-14",
-      "remaining_stock": "4 kg",
-      "next_purchase_tentative_date": "2025-05-18",
-      "expiry_date": "2025-05-28"
+      "quantity": "133 kg",
+      "purchase_date": "2025-05-06",
+      "remaining_stock": "97 kg",
+      "next_purchase_tentative_date": "2025-06-05",
+      "expiry_date": "2025-08-06"
     }
   ]
 }
