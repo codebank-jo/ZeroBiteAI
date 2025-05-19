@@ -18,6 +18,7 @@ from fastapi.responses import RedirectResponse, FileResponse, Response
 import os
 from testdatagen import test_data_gen_content
 from salesdetails import sales_details_content
+from weather import weather_page
 
 # Create a FastAPI application instance
 app = FastAPI()
@@ -47,20 +48,17 @@ leftover_app = layout(leftover_report_content, selected="leftover")
 testdata_app = layout(test_data_gen_content, selected="testdata")
 # Create the Gradio app for the sales details page
 salesdetails_app = layout(sales_details_content, selected="salesdetails")
+# Create the Gradio app for the weather page
+weather_app = layout(weather_page, selected="weather")
 
 # Mount the inventory Gradio app at the root (/) and /inventory path
-#app = gr.mount_gradio_app(app, inventory_app, path="/")
 app = gr.mount_gradio_app(app, inventory_app, path="/inventory")
-# Mount the menu Gradio app at the /menu path
 app = gr.mount_gradio_app(app, menu_app, path="/menu")
-# Mount the sales Gradio app at the /sales path
 app = gr.mount_gradio_app(app, sales_app, path="/sales")
-# Mount the leftover Gradio app at the /leftover path
 app = gr.mount_gradio_app(app, leftover_app, path="/leftover")
-# Mount the test data generator Gradio app at the /testdata path
 app = gr.mount_gradio_app(app, testdata_app, path="/testdata")
-# Mount the sales details Gradio app at the /salesdetails path
 app = gr.mount_gradio_app(app, salesdetails_app, path="/salesdetails")
+app = gr.mount_gradio_app(app, weather_app, path="/weather")
 
 # Run the FastAPI app with Uvicorn if this file is executed directly
 if __name__ == "__main__":
