@@ -1,0 +1,172 @@
+{
+  "trends": [
+    {
+      "menuitem": "Classic Omelette",
+      "date": "2025-05-20",
+      "facebook_status": "Non-Trending",
+      "facebook_score": 35,
+      "instagram_status": "Non-Trending",
+      "instagram_score": 19,
+      "tiktok_status": "Non-Trending",
+      "tiktok_score": 35,
+      "twitter_status": "Trending",
+      "twitter_score": 81
+    },
+    {
+      "menuitem": "Vegetable Pasta",
+      "date": "2025-05-20",
+      "facebook_status": "Similar",
+      "facebook_score": 20,
+      "instagram_status": "Trending",
+      "instagram_score": 28,
+      "tiktok_status": "Non-Trending",
+      "tiktok_score": 27,
+      "twitter_status": "Similar",
+      "twitter_score": 0
+    },
+    {
+      "menuitem": "Grilled Chicken Breast",
+      "date": "2025-05-20",
+      "facebook_status": "Trending",
+      "facebook_score": 91,
+      "instagram_status": "Similar",
+      "instagram_score": 14,
+      "tiktok_status": "Trending",
+      "tiktok_score": 96,
+      "twitter_status": "Non-Trending",
+      "twitter_score": 22
+    },
+    {
+      "menuitem": "Vegan Stir Fry",
+      "date": "2025-05-20",
+      "facebook_status": "Non-Trending",
+      "facebook_score": 8,
+      "instagram_status": "Similar",
+      "instagram_score": 34,
+      "tiktok_status": "Non-Trending",
+      "tiktok_score": 23,
+      "twitter_status": "Trending",
+      "twitter_score": 43
+    },
+    {
+      "menuitem": "Beef Sirloin Steak",
+      "date": "2025-05-20",
+      "facebook_status": "Similar",
+      "facebook_score": 32,
+      "instagram_status": "Trending",
+      "instagram_score": 100,
+      "tiktok_status": "Non-Trending",
+      "tiktok_score": 7,
+      "twitter_status": "Similar",
+      "twitter_score": 16
+    },
+    {
+      "menuitem": "Cheese Sandwich",
+      "date": "2025-05-20",
+      "facebook_status": "Trending",
+      "facebook_score": 36,
+      "instagram_status": "Non-Trending",
+      "instagram_score": 35,
+      "tiktok_status": "Trending",
+      "tiktok_score": 26,
+      "twitter_status": "Similar",
+      "twitter_score": 15
+    },
+    {
+      "menuitem": "Fruit Salad",
+      "date": "2025-05-20",
+      "facebook_status": "Trending",
+      "facebook_score": 22,
+      "instagram_status": "Trending",
+      "instagram_score": 44,
+      "tiktok_status": "Non-Trending",
+      "tiktok_score": 34,
+      "twitter_status": "Non-Trending",
+      "twitter_score": 39
+    },
+    {
+      "menuitem": "Fish and Chips",
+      "date": "2025-05-20",
+      "facebook_status": "Non-Trending",
+      "facebook_score": 39,
+      "instagram_status": "Non-Trending",
+      "instagram_score": 24,
+      "tiktok_status": "Similar",
+      "tiktok_score": 16,
+      "twitter_status": "Non-Trending",
+      "twitter_score": 37
+    },
+    {
+      "menuitem": "Classic Omelette",
+      "date": "2025-05-20",
+      "facebook_status": "Similar",
+      "facebook_score": 16,
+      "instagram_status": "Non-Trending",
+      "instagram_score": 22,
+      "tiktok_status": "Trending",
+      "tiktok_score": 68,
+      "twitter_status": "Similar",
+      "twitter_score": 8
+    },
+    {
+      "menuitem": "Vegetable Pasta",
+      "date": "2025-05-20",
+      "facebook_status": "Similar",
+      "facebook_score": 1,
+      "instagram_status": "Trending",
+      "instagram_score": 13,
+      "tiktok_status": "Similar",
+      "tiktok_score": 3,
+      "twitter_status": "Trending",
+      "twitter_score": 87
+    },
+    {
+      "menuitem": "Grilled Chicken Breast",
+      "date": "2025-05-20",
+      "facebook_status": "Trending",
+      "facebook_score": 61,
+      "instagram_status": "Non-Trending",
+      "instagram_score": 0,
+      "tiktok_status": "Non-Trending",
+      "tiktok_score": 2,
+      "twitter_status": "Trending",
+      "twitter_score": 56
+    },
+    {
+      "menuitem": "Vegan Stir Fry",
+      "date": "2025-05-20",
+      "facebook_status": "Non-Trending",
+      "facebook_score": 40,
+      "instagram_status": "Trending",
+      "instagram_score": 61,
+      "tiktok_status": "Non-Trending",
+      "tiktok_score": 26,
+      "twitter_status": "Similar",
+      "twitter_score": 19
+    },
+    {
+      "menuitem": "Beef Sirloin Steak",
+      "date": "2025-05-20",
+      "facebook_status": "Similar",
+      "facebook_score": 16,
+      "instagram_status": "Similar",
+      "instagram_score": 29,
+      "tiktok_status": "Non-Trending",
+      "tiktok_score": 21,
+      "twitter_status": "Trending",
+      "twitter_score": 17
+    },
+    {
+      "menuitem": "Cheese Sandwich",
+      "date": "2025-05-20",
+      "facebook_status": "Non-Trending",
+      "facebook_score": 3,
+      "instagram_status": "Non-Trending",
+      "instagram_score": 26,
+      "tiktok_status": "Non-Trending",
+      "tiktok_score": 7,
+      "twitter_status": "Trending",
+      "twitter_score": 93
+    }
+  ]
+}

@@ -28,6 +28,7 @@ def sidenav(selected="inventory"):
     leftover_style = "color:#fff;font-weight:bold;" if selected == "leftover" else "color:#bbb;"
     testdata_style = "color:#fff;font-weight:bold;" if selected == "testdata" else "color:#bbb;"
     weather_style = "color:#fff;font-weight:bold;" if selected == "weather" else "color:#bbb;"
+    trends_style = "color:#fff;font-weight:bold;" if selected == "trends" else "color:#bbb;"  # <-- Add this line
     return gr.HTML(
         f"""
         <div style='background:#222;color:#fff;padding:24px 0 24px 24px;height:80vh;min-width:150px;'>
@@ -39,6 +40,7 @@ def sidenav(selected="inventory"):
                 <li style="{salesdetails_style}"><a href='/salesdetails' style='text-decoration:none;{salesdetails_style}'>🧾 Sales Details</a></li>
                 <li style="{leftover_style}"><a href='/leftover' style='text-decoration:none;{leftover_style}'>🥗 Leftover Report</a></li>                
                 <li style="{weather_style}"><a href='/weather' style='text-decoration:none;{weather_style}'>🌤️ Weather</a></li>
+                <li style="{trends_style}"><a href='/trends' style='text-decoration:none;{trends_style}'>📊 Social Trends</a></li> <!-- Add this line -->
                 <li style="{testdata_style}"><a href='/testdata' style='text-decoration:none;{testdata_style}'>🧪 Test Data Generator</a></li>
             </ul>
         </div>
