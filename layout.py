@@ -33,7 +33,7 @@ def sidenav(selected="inventory"):
 
     return gr.HTML(
         f"""
-        <div style='background:#222;color:#fff;padding:24px 0 24px 24px;height:80vh;min-width:150px;'>
+        <div style='background:#222;color:#fff;padding:24px 0 24px 24px;height:80vh;min-width:150px;margin-top:-10px'>
             <h3 style='margin-top:0;color:#fff;'>Navigation</h3>
             <ul style='list-style:none;padding-left:0;font-size:1.1em;line-height:2;'>
                 <li style="{inventory_style}"><a href='/inventory' style='text-decoration:none;{inventory_style}'>📦 Inventory List</a></li>

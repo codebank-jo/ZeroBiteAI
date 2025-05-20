@@ -83,35 +83,29 @@ def plot_trending_day(df_trend):
     return fig
 
 def sales_trend_content():
-    # Load sales trend and items data
     df_trend, df_items = load_sales_trend()
-    # Create a row for the daily sales trend title
-    with gr.Row():
-        gr.Markdown("### Daily Sales Trend (Last 7 Days)")           # Display section title
-    # Display a line plot of total sales per day
-    gr.LinePlot(
-        value=df_trend,                                              # Data for line plot
-        x="date",                                                    # X-axis column
-        y="total_sales_gbp",                                         # Y-axis column
-        title="Total Sales (GBP) per Day",                           # Plot title
-        x_title="Date",                                              # X-axis label
-        y_title="Total Sales (GBP)",                                 # Y-axis label
-        tooltip=["date", "total_sales_gbp"],                         # Tooltip columns
-        width=900,                                                   # Plot width
-        height=350,                                                  # Plot height
-    )
-    # Create a row for the three plots
-    with gr.Row():
-        with gr.Column():
-            # Group items by menuitem and sum quantity sold
-            top_items = df_items.groupby("menuitem")["quantity_sold"].sum().reset_index()
-            # Display pie chart of most purchased items
-            gr.Plot(plot_pie(top_items))
-        with gr.Column():
-            # Get top 5 items by quantity sold
-            top5 = top_items.sort_values("quantity_sold", ascending=False).head(5)
-            # Display bar chart of top 5 items
-            gr.Plot(plot_bar(top5))
-        with gr.Column():
-            # Display bar chart of daily sales trend
-            gr.Plot(plot_trending_day(df_trend))
+    with gr.Blocks() as demo:
+        with gr.Row():
+            gr.Markdown("### Daily Sales Trend (Last 7 Days)")
+        with gr.Row():
+            gr.LinePlot(
+                value=df_trend,
+                x="date",
+                y="total_sales_gbp",
+                title="Total Sales (GBP) per Day",
+                x_title="Date",
+                y_title="Total Sales (GBP)",
+                tooltip=["date", "total_sales_gbp"],
+                width=900,
+                height=350,
+            )
+        with gr.Row():
+            with gr.Column():
+                top_items = df_items.groupby("menuitem")["quantity_sold"].sum().reset_index()
+                gr.Plot(plot_pie(top_items))
+            with gr.Column():
+                top5 = top_items.sort_values("quantity_sold", ascending=False).head(5)
+                gr.Plot(plot_bar(top5))
+            with gr.Column():
+                gr.Plot(plot_trending_day(df_trend))
+    return demo
