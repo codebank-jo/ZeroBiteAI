@@ -21,6 +21,7 @@ from salesdetails import sales_details_content
 from weather import weather_page
 from social_trends import social_trends_page
 from prediction import food_demand_prediction_page
+from current_day_sales import current_day_sales_page  # Import the new page
 
 # Create a FastAPI application instance
 app = FastAPI()
@@ -56,6 +57,8 @@ weather_app = layout(weather_page, selected="weather")
 trends_app = layout(social_trends_page, selected="trends")
 # Create the Gradio app for the food demand prediction page
 prediction_app = layout(food_demand_prediction_page, selected="prediction")
+# Create the Gradio app for the current day sales page
+current_day_sales_app = layout(current_day_sales_page, selected="current_day_sales")
 
 # Mount the inventory Gradio app at the root (/) and /inventory path
 app = gr.mount_gradio_app(app, inventory_app, path="/inventory")
@@ -67,6 +70,7 @@ app = gr.mount_gradio_app(app, salesdetails_app, path="/salesdetails")
 app = gr.mount_gradio_app(app, weather_app, path="/weather")
 app = gr.mount_gradio_app(app, trends_app, path="/trends")
 app = gr.mount_gradio_app(app, prediction_app, path="/prediction")
+app = gr.mount_gradio_app(app, current_day_sales_app, path="/current_day_sales")
 
 # Run the FastAPI app with Uvicorn if this file is executed directly
 if __name__ == "__main__":

@@ -29,7 +29,8 @@ def sidenav(selected="inventory"):
     testdata_style = "color:#fff;font-weight:bold;" if selected == "testdata" else "color:#bbb;"
     weather_style = "color:#fff;font-weight:bold;" if selected == "weather" else "color:#bbb;"
     trends_style = "color:#fff;font-weight:bold;" if selected == "trends" else "color:#bbb;"
-    prediction_style = "color:#fff;font-weight:bold;" if selected == "prediction" else "color:#bbb;"  # <-- Add this line
+    prediction_style = "color:#fff;font-weight:bold;" if selected == "prediction" else "color:#bbb;"
+    current_day_sales_style = "color:#fff;font-weight:bold;" if selected == "current_day_sales" else "color:#bbb;"
 
     return gr.HTML(
         f"""
@@ -43,8 +44,9 @@ def sidenav(selected="inventory"):
                 <li style="{leftover_style}"><a href='/leftover' style='text-decoration:none;{leftover_style}'>🥗 Leftover Report</a></li>
                 <li style="{weather_style}"><a href='/weather' style='text-decoration:none;{weather_style}'>🌤️ Weather</a></li>
                 <li style="{trends_style}"><a href='/trends' style='text-decoration:none;{trends_style}'>📊 Social Trends</a></li>
-                <li style="{prediction_style}"><a href='/prediction' style='text-decoration:none;{prediction_style}'>🔮 Food Demand Prediction</a></li> <!-- Add this line -->
+                <li style="{prediction_style}"><a href='/prediction' style='text-decoration:none;{prediction_style}'>🔮 Food Demand Prediction</a></li>
                 <li style="{testdata_style}"><a href='/testdata' style='text-decoration:none;{testdata_style}'>🧪 Test Data Generator</a></li>
+                <li style="{current_day_sales_style}"><a href='/current_day_sales' style='text-decoration:none;{current_day_sales_style}'>🛒 Current Day Sales</a></li>
             </ul>
         </div>
         """

@@ -1,200 +1,200 @@
 {
   "weather": [
     {
-      "date": "2025-05-20",
-      "period": "Forenoon",
-      "weather": "Rain",
-      "temperature": 33.4,
-      "feels_like": 31.9
-    },
-    {
-      "date": "2025-05-20",
-      "period": "Afternoon",
-      "weather": "Sunny",
-      "temperature": 25.9,
-      "feels_like": 26.1
-    },
-    {
       "date": "2025-05-21",
       "period": "Forenoon",
       "weather": "Thunderstorm",
-      "temperature": 33.2,
-      "feels_like": 34.5
+      "temperature": 23.4,
+      "feels_like": 23.3
     },
     {
       "date": "2025-05-21",
       "period": "Afternoon",
-      "weather": "Thunderstorm",
-      "temperature": 30.9,
-      "feels_like": 30.8
+      "weather": "Rain",
+      "temperature": 15.9,
+      "feels_like": 17.3
     },
     {
       "date": "2025-05-22",
       "period": "Forenoon",
-      "weather": "Thunderstorm",
-      "temperature": 16.4,
-      "feels_like": 16.1
-    },
-    {
-      "date": "2025-05-22",
-      "period": "Afternoon",
-      "weather": "Rain",
-      "temperature": 25.4,
-      "feels_like": 24.4
-    },
-    {
-      "date": "2025-05-23",
-      "period": "Forenoon",
-      "weather": "Rain",
-      "temperature": 19.3,
-      "feels_like": 20.7
-    },
-    {
-      "date": "2025-05-23",
-      "period": "Afternoon",
       "weather": "Fog",
-      "temperature": 31.7,
-      "feels_like": 30.4
-    },
-    {
-      "date": "2025-05-24",
-      "period": "Forenoon",
-      "weather": "Sunny",
-      "temperature": 18.2,
-      "feels_like": 18.0
-    },
-    {
-      "date": "2025-05-24",
-      "period": "Afternoon",
-      "weather": "Thunderstorm",
-      "temperature": 25.7,
+      "temperature": 25.2,
       "feels_like": 25.5
     },
     {
-      "date": "2025-05-25",
-      "period": "Forenoon",
-      "weather": "Sunny",
-      "temperature": 22.6,
-      "feels_like": 24.2
-    },
-    {
-      "date": "2025-05-25",
-      "period": "Afternoon",
-      "weather": "Fog",
-      "temperature": 31.0,
-      "feels_like": 31.0
-    },
-    {
-      "date": "2025-05-26",
-      "period": "Forenoon",
-      "weather": "Thunderstorm",
-      "temperature": 15.1,
-      "feels_like": 14.5
-    },
-    {
-      "date": "2025-05-26",
-      "period": "Afternoon",
-      "weather": "Fog",
-      "temperature": 19.1,
-      "feels_like": 19.7
-    },
-    {
-      "date": "2025-05-27",
-      "period": "Forenoon",
-      "weather": "Windy",
-      "temperature": 33.2,
-      "feels_like": 33.9
-    },
-    {
-      "date": "2025-05-27",
-      "period": "Afternoon",
-      "weather": "Sunny",
-      "temperature": 32.4,
-      "feels_like": 33.6
-    },
-    {
-      "date": "2025-05-28",
-      "period": "Forenoon",
-      "weather": "Windy",
-      "temperature": 18.4,
-      "feels_like": 17.6
-    },
-    {
-      "date": "2025-05-28",
-      "period": "Afternoon",
-      "weather": "Windy",
-      "temperature": 22.4,
-      "feels_like": 20.5
-    },
-    {
-      "date": "2025-05-29",
-      "period": "Forenoon",
-      "weather": "Cloudy",
-      "temperature": 15.8,
-      "feels_like": 16.1
-    },
-    {
-      "date": "2025-05-29",
+      "date": "2025-05-22",
       "period": "Afternoon",
       "weather": "Cloudy",
-      "temperature": 31.0,
-      "feels_like": 30.2
+      "temperature": 29.7,
+      "feels_like": 29.9
     },
     {
-      "date": "2025-05-30",
-      "period": "Forenoon",
-      "weather": "Rain",
-      "temperature": 34.3,
-      "feels_like": 34.4
-    },
-    {
-      "date": "2025-05-30",
-      "period": "Afternoon",
-      "weather": "Thunderstorm",
-      "temperature": 34.6,
-      "feels_like": 36.2
-    },
-    {
-      "date": "2025-05-31",
-      "period": "Forenoon",
-      "weather": "Cloudy",
-      "temperature": 10.7,
-      "feels_like": 10.1
-    },
-    {
-      "date": "2025-05-31",
-      "period": "Afternoon",
-      "weather": "Cloudy",
-      "temperature": 33.5,
-      "feels_like": 33.2
-    },
-    {
-      "date": "2025-06-01",
-      "period": "Forenoon",
-      "weather": "Sunny",
-      "temperature": 11.5,
-      "feels_like": 13.1
-    },
-    {
-      "date": "2025-06-01",
-      "period": "Afternoon",
-      "weather": "Sunny",
-      "temperature": 27.1,
-      "feels_like": 26.7
-    },
-    {
-      "date": "2025-06-02",
+      "date": "2025-05-23",
       "period": "Forenoon",
       "weather": "Snow",
-      "temperature": 0.3,
-      "feels_like": 2.2
+      "temperature": 2.9,
+      "feels_like": 1.7
+    },
+    {
+      "date": "2025-05-23",
+      "period": "Afternoon",
+      "weather": "Windy",
+      "temperature": 32.2,
+      "feels_like": 33.3
+    },
+    {
+      "date": "2025-05-24",
+      "period": "Forenoon",
+      "weather": "Snow",
+      "temperature": 2.8,
+      "feels_like": 0.9
+    },
+    {
+      "date": "2025-05-24",
+      "period": "Afternoon",
+      "weather": "Fog",
+      "temperature": 23.5,
+      "feels_like": 25.4
+    },
+    {
+      "date": "2025-05-25",
+      "period": "Forenoon",
+      "weather": "Windy",
+      "temperature": 21.1,
+      "feels_like": 22.3
+    },
+    {
+      "date": "2025-05-25",
+      "period": "Afternoon",
+      "weather": "Thunderstorm",
+      "temperature": 28.7,
+      "feels_like": 27.8
+    },
+    {
+      "date": "2025-05-26",
+      "period": "Forenoon",
+      "weather": "Windy",
+      "temperature": 10.8,
+      "feels_like": 11.4
+    },
+    {
+      "date": "2025-05-26",
+      "period": "Afternoon",
+      "weather": "Rain",
+      "temperature": 13.7,
+      "feels_like": 13.6
+    },
+    {
+      "date": "2025-05-27",
+      "period": "Forenoon",
+      "weather": "Cloudy",
+      "temperature": 13.8,
+      "feels_like": 15.0
+    },
+    {
+      "date": "2025-05-27",
+      "period": "Afternoon",
+      "weather": "Thunderstorm",
+      "temperature": 18.8,
+      "feels_like": 17.3
+    },
+    {
+      "date": "2025-05-28",
+      "period": "Forenoon",
+      "weather": "Fog",
+      "temperature": 11.7,
+      "feels_like": 10.3
+    },
+    {
+      "date": "2025-05-28",
+      "period": "Afternoon",
+      "weather": "Windy",
+      "temperature": 18.5,
+      "feels_like": 20.0
+    },
+    {
+      "date": "2025-05-29",
+      "period": "Forenoon",
+      "weather": "Fog",
+      "temperature": 21.0,
+      "feels_like": 22.6
+    },
+    {
+      "date": "2025-05-29",
+      "period": "Afternoon",
+      "weather": "Fog",
+      "temperature": 26.2,
+      "feels_like": 26.9
+    },
+    {
+      "date": "2025-05-30",
+      "period": "Forenoon",
+      "weather": "Thunderstorm",
+      "temperature": 34.6,
+      "feels_like": 32.6
+    },
+    {
+      "date": "2025-05-30",
+      "period": "Afternoon",
+      "weather": "Rain",
+      "temperature": 16.6,
+      "feels_like": 18.2
+    },
+    {
+      "date": "2025-05-31",
+      "period": "Forenoon",
+      "weather": "Fog",
+      "temperature": 19.9,
+      "feels_like": 18.2
+    },
+    {
+      "date": "2025-05-31",
+      "period": "Afternoon",
+      "weather": "Thunderstorm",
+      "temperature": 29.4,
+      "feels_like": 29.7
+    },
+    {
+      "date": "2025-06-01",
+      "period": "Forenoon",
+      "weather": "Sunny",
+      "temperature": 30.9,
+      "feels_like": 31.9
+    },
+    {
+      "date": "2025-06-01",
+      "period": "Afternoon",
+      "weather": "Snow",
+      "temperature": 3.7,
+      "feels_like": 4.1
+    },
+    {
+      "date": "2025-06-02",
+      "period": "Forenoon",
+      "weather": "Sunny",
+      "temperature": 22.2,
+      "feels_like": 22.1
     },
     {
       "date": "2025-06-02",
       "period": "Afternoon",
       "weather": "Rain",
-      "temperature": 27.4,
-      "feels_like": 27.9
+      "temperature": 20.7,
+      "feels_like": 20.0
+    },
+    {
+      "date": "2025-06-03",
+      "period": "Forenoon",
+      "weather": "Fog",
+      "temperature": 22.2,
+      "feels_like": 24.1
+    },
+    {
+      "date": "2025-06-03",
+      "period": "Afternoon",
+      "weather": "Rain",
+      "temperature": 24.5,
+      "feels_like": 25.6
     }
   ]
 }
