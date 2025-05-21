@@ -99,3 +99,26 @@ cloudflared tunnel --url http://localhost:7860
 ## License
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+
+## Screenshots
+### Inventory Page
+![Inventory Image](screenshot/inventory.jpg)
+### Menu Page
+![Menu Image](screenshot/menu.jpg)
+### Sales reReport
+![Sales Image](screenshot/salesreport.jpg)
+### Sales Details Page
+![Sales Details Image](screenshot/salesdetails.jpg)
+### Leftover Page
+![Leftover Image](screenshot/leftover.jpg)
+### Weather Page
+![Weather Image](screenshot/weather.jpg)
+### Social Media Trends Page
+![Trends Image](screenshot/trends.jpg)
+### Prediction Page
+![Prediction Image](screenshot/prediction.jpg)
+### Test Data Generator Page
+![Test Data Image](screenshot/testdata.jpg)
+### Current day sales
+![Current day stock Image](screenshot/currentday.jpg)
+
