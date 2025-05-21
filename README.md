@@ -104,21 +104,21 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 ### Inventory Page
 ![Inventory Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/inventory.jpg)
 ### Menu Page
-![Menu Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshot/menu.jpg)
+![Menu Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/menu.jpg)
 ### Sales reReport
-![Sales Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshot/salesreport.jpg)
+![Sales Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/salesreport.jpg)
 ### Sales Details Page
-![Sales Details Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshot/salesdetails.jpg)
+![Sales Details Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/salesdetails.jpg)
 ### Leftover Page
-![Leftover Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshot/leftover.jpg)
+![Leftover Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/leftovers.jpg)
 ### Weather Page
 ![Weather Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshot/weather.jpg)
 ### Social Media Trends Page
 ![Trends Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshot/trends.jpg)
 ### Prediction Page
-![Prediction Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshot/prediction.jpg)
+![Prediction Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/prediction.jpg)
 ### Test Data Generator Page
-![Test Data Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshot/testdata.jpg)
+![Test Data Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/testdata.jpg)
 ### Current day sales
-![Current day stock Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshot/currentday.jpg)
+![Current day stock Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/currentday.jpg)
 
