@@ -112,9 +112,9 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 ### Leftover Page
 ![Leftover Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/leftovers.jpg)
 ### Weather Page
-![Weather Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshot/weather.jpg)
+![Weather Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/weather.jpg)
 ### Social Media Trends Page
-![Trends Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshot/trends.jpg)
+![Trends Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/trends.jpg)
 ### Prediction Page
 ![Prediction Image](https://github.com/codebank-jo/ZeroBiteAI/blob/main/screenshots/prediction.jpg)
 ### Test Data Generator Page
