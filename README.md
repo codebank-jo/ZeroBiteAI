@@ -1,36 +1,41 @@
 # ZeroBite AI Inventory, Menu & Food Waste Dashboard
 
-This project is a real-time dashboard for visualizing and managing inventory, menu, sales, and food waste data using Gradio, FastAPI, and Pandas. It allows users to monitor inventory levels, track expiry dates, manage stock efficiently, view menu items with images and pricing, and analyze food waste/loss trends.
+ZeroBite AI is a real-time dashboard for visualizing and managing inventory, menu, sales, and food waste data. Built with **Gradio**, **FastAPI**, and **Pandas**, it enables users to:
+
+- Monitor inventory levels and expiry dates
+- Manage stock efficiently
+- View menu items with images and pricing
+- Analyze food waste and loss trends
 
 ## Project Structure
 
 ```
 ZeroBite AI
-├── app.py                # Main entry point for the Gradio/FastAPI application
+├── app.py                # Main application entry point
 ├── data
-│   ├── inventory.json    # JSON file containing inventory data
-│   ├── menu.json         # JSON file containing menu data
-│   ├── sales.json        # JSON file containing sales data
-│   └── leftover.json     # JSON file containing food waste/leftover data
+│   ├── inventory.json    # Inventory data
+│   ├── menu.json         # Menu data
+│   ├── sales.json        # Sales data
+│   └── leftover.json     # Food waste/leftover data
 ├── utils
-│   └── data_loader.py    # Utility functions for loading inventory data
-├── layout.py             # Layout components for navbar, sidebar, and footer
-├── inventorylist.py      # Inventory list page logic
-├── menuitems.py          # Menu list page logic
-├── salesreport.py        # Sales report page logic
-├── leftoverreport.py     # Leftover/waste report page logic
-├── salesdetails.py       # Sales details page logic (filter, search, trend graph)
-├── testdatagen.py        # Test data generator for sales.json
-├── requirements.txt      # List of dependencies for the project
-└── README.md             # Project documentation
+│   └── data_loader.py    # Data loading utilities
+├── layout.py             # UI layout components
+├── inventorylist.py      # Inventory page logic
+├── menuitems.py          # Menu page logic
+├── salesreport.py        # Sales report logic
+├── leftoverreport.py     # Waste report logic
+├── salesdetails.py       # Sales details (filter, search, trends)
+├── testdatagen.py        # Test data generator for sales
+├── requirements.txt      # Project dependencies
+└── README.md             # Documentation
 ```
 
-## Python Version
+## Requirements
 
-This project is tested with **Python 3.10+**.  
-It is recommended to use Python 3.10 or newer for best compatibility.
+- **Python 3.10+** (recommended for compatibility)
+- **pip** (Python package manager)
 
-## Setup Instructions
+## Getting Started
 
 1. **Clone the repository:**
    ```sh
@@ -38,7 +43,7 @@ It is recommended to use Python 3.10 or newer for best compatibility.
    cd "ZeroBite AI"
    ```
 
-2. **Install the required dependencies:**
+2. **Install dependencies:**
    ```sh
    pip install -r requirements.txt
    ```
@@ -48,38 +53,33 @@ It is recommended to use Python 3.10 or newer for best compatibility.
    python app.py
    ```
 
-## Usage Guidelines
+4. **Access the dashboard:**
+   Open your browser and navigate to the local URL displayed in the terminal (e.g., `http://127.0.0.1:7860`).
 
-- Open your web browser and navigate to the provided local URL (e.g., `http://127.0.0.1:7860/inventory`, `/menu`, `/sales`, `/leftover`, `/salesdetails`, or `/testdata`) to access the dashboard.
-- Use the sidebar to switch between Inventory List, Menu List, Sales Report, Sales Details, Leftover Report, and Test Data Generator.
-- Use the filter box to search by material/type (inventory), menu item/type (menu), menu item/reason (leftover), or menu item (sales details).
-- Use the date filter and page number control to navigate through paginated data.
-- Click "Refresh Data" to reload the latest data from the JSON files.
-- Menu items display image thumbnails and prices in GBP.
-- The Leftover Report page provides:
-  - A table of food waste/leftover items with pagination and filtering.
-  - Graphs for loss per menu item (bar chart) and loss by date (line chart), displayed side by side and using the full width of the page.
-- The Sales Details page provides:
-  - A table of sales transactions with pagination, filtering, and date selection.
-  - A trend graph showing quantity sold per item by date (full width).
-- The Test Data Generator page allows you to generate random sales data for 1–90 days, based on your menu items and their available stock.
+## Usage
 
-## Features
+- **Navigation:** Use the sidebar to switch between Inventory, Menu, Sales, Sales Details, Leftover, and Test Data Generator pages.
+- **Filtering & Search:** Filter and search by material/type, menu item/type, reason, or date as appropriate.
+- **Pagination & Date Filters:** Browse data using pagination and date filters.
+- **Refresh Data:** Click "Refresh Data" to reload from JSON files.
+- **Menu Items:** View image thumbnails and GBP prices for menu items.
+- **Leftover Report:** Analyze food waste with tables, bar charts, and line charts.
+- **Sales Details:** View sales trends with tables, filters, and trend graphs.
+- **Test Data Generator:** Generate random sales data for 1–90 days based on menu and stock.
 
-- Real-time visualization of inventory, menu, sales, and food waste data.
-- Filtering and pagination for easy navigation.
-- Image preview for menu items.
-- Food waste analytics with interactive graphs (dark theme).
-- Sales details analytics with trend graph.
-- Test data generator for sales data.
-- User-friendly interface powered by Gradio and FastAPI.
-- Modular layout with navbar (with logo, profile, logout), sidebar, and footer.
-- Clean navigation URLs (`/inventory`, `/menu`, `/sales`, `/salesdetails`, `/leftover`, `/testdata`).
-- Custom favicon using the ZeroBite AI logo.
+## Key Features
+
+- **Real-Time Data Visualization:** Monitor inventory, menu, sales, and food waste in real time.
+- **Interactive Analytics:** Use filtering, pagination, and search for detailed insights.
+- **Graphical Reports:** Visualize food waste and sales trends with interactive charts.
+- **Test Data Generation:** Simulate sales data for testing and analysis.
+- **User-Friendly Interface:** Built with Gradio and FastAPI for a seamless experience.
+- **Modular Design:** Includes a navbar, sidebar, and footer for easy navigation.
+- **Custom Branding:** Features a custom favicon and clean URLs for all pages.
 
 ## Public Access
 
-To share your dashboard publicly, use a tunneling tool like [ngrok](https://ngrok.com/) or [cloudflared](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/):
+To share your dashboard publicly, use a tunneling tool such as [ngrok](https://ngrok.com/) or [cloudflared](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/):
 
 ```sh
 ngrok http 7860
@@ -87,6 +87,15 @@ ngrok http 7860
 cloudflared tunnel --url http://localhost:7860
 ```
 
+## Troubleshooting
+
+- **Dependency Issues:** Ensure all dependencies in `requirements.txt` are installed.
+- **Port Conflicts:** If port `7860` is in use, specify a different port when running the app:
+  ```sh
+  python app.py --server.port <new-port>
+  ```
+- **Data Loading Errors:** Verify the JSON files in the `data` directory are correctly formatted.
+
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.

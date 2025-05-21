@@ -6,13 +6,13 @@ def navbar():
         """
         <div style='width:100%;background:#222;color:#fff;padding:18px 32px;font-size:2em;font-weight:bold;letter-spacing:1px;display:flex;align-items:center;justify-content:space-between;'>
             <span style="display:flex;align-items:center;gap:16px;">
-                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="ZeroBite AI Logo" style="width:38px;height:38px;border-radius:50%;background:#fff;padding:2px;">
-                ZeroBite AI
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Zero Waste Ninjas Logo" style="width:38px;height:38px;border-radius:50%;background:#fff;padding:2px;">
+                Zero Waste Ninjas
             </span>
             <div style='display:flex;align-items:center;gap:18px;'>
                 <span style='display:flex;align-items:center;gap:8px;font-size:1em;'>
                     <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Anonymous Profile" style="background:#444;border-radius:50%;width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;object-fit:cover;">
-                    <span style="font-size:0.9em;color:#ccc;">Administrator</span>
+                    <span style="font-size:0.9em;color:#ccc;">Hive Kitchen</span>
                 </span>
                 <a href="/logout" style='color:#fff;text-decoration:none;font-size:1em;padding:6px 16px;background:#e74c3c;border-radius:5px;font-weight:500;'>Logout</a>
             </div>
@@ -55,14 +55,14 @@ def footer():
     return gr.HTML(
         """
         <div style='width:100%;background:#222;color:#fff;padding:10px 0;text-align:center;font-size:1em;letter-spacing:1px;'>
-            &copy; 2025 ZeroBite AI. All rights reserved.
+            &copy; 2025 Zero Waste Ninjas. All rights reserved.
         </div>
         """
     )
 
 def layout(main_content_fn, selected="inventory"):
     # Example inside your layout function or main Gradio Blocks
-    with gr.Blocks(title="ZeroBite AI") as demo:
+    with gr.Blocks(title="Zero Waste Ninjas") as demo:
         navbar()  # Add the navbar at the top
         with gr.Row():  # Create a horizontal row for sidebar and main content
             with gr.Column(scale=1, min_width=180):  # Sidebar column
